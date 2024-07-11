@@ -1,29 +1,3 @@
-/*
-240618red
-加密
-脚本锁佣建议用新的京粉号
-https://u.jd.com/xxxxxxx
-
-返利变量：JD_240618_RedRebateCode，若需要返利给自己，请自己修改环境变量[JD_240618_RedRebateCode]
-xxxxxxx换成自己的返利 就是链接后面那7位字母
-export JD_240618_RedRebateCode="xxxxxxx"
-
-每次脚本领取红包次数
-export JD_240618_RedCount="0"
-0=不限制 1=领取1次
-每个账号之间等待时间单位毫秒 默认15秒
-1000=1秒
-export JD_240618_RedTimes="15000"
-export JD_240618_Red_proxy='' 代理池URL多个请用|隔开
-返回的格式为：ip:port
-如果有账号密码的话格式为：ip:port:username:password
-export JD_240618_proxyReceiveCount='10' 使用代理领取账号大于 10 切换ip 填数字
-export JD_240618_Red_taskFlag='true' 执行打卡任务 true=执行 false=不执行 默认执行
-
-0 0,10,20 * * * https://raw.githubusercontent.com/smiek2121/scripts/master/gua_240618_Red.js 240618red
-
-*/
-
 let rebateCodes = ''; // 返利变量
 let redTimes = 10000 // 等待时间单位毫秒
 let redCount = 0 // 领取次数
